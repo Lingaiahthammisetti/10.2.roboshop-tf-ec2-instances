@@ -10,8 +10,9 @@ variable "instances" {
         cart     = "t3.micro"
         shipping = "t3.small"
         payment  = "t3.micro"
-        dispatch = "t3.micro"
-        frontend = "t3.micro"
+       #dispatch = "t3.micro"
+       #frontend = "t3.micro"
+        web = "t3.micro"
     }
 }
 variable "allow_all" {
