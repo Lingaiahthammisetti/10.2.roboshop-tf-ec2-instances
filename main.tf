@@ -11,9 +11,9 @@ resource "aws_instance" "roboshop" {
 resource "aws_route53_record" "roboshop_r53" {
     for_each = aws_instance.roboshop
     zone_id = var.zone_id
-    name    = each.key == "frontend"? var.domain_name : "${each.key}.${var.domain_name}" 
+    name    = each.key == "web"? var.domain_name : "${each.key}.${var.domain_name}" 
     type    = "A"
     ttl     = 1
-    records = each.key == "frontend" ? [each.value.public_ip]:[each.value.private_ip]
+    records = each.key == "web" ? [each.value.public_ip]:[each.value.private_ip]
     allow_overwrite = true
 }

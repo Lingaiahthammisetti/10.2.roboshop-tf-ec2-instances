@@ -10,7 +10,7 @@ variable "instances" {
         cart     = "t3.micro"
         shipping = "t3.small"
         payment  = "t3.micro"
-       #dispatch = "t3.micro"
+        dispatch = "t3.micro"
        #frontend = "t3.micro"
         web = "t3.micro"
     }
@@ -20,7 +20,7 @@ variable "allow_all" {
    default = "sg-06b1b57b365846051"
 }
 variable "zone_id" {
-    default = "Z01917833NI8WX0T5QR18"
+    default = "Z079879235Q20ZAJVG2CH"
 }
 variable "domain_name" {
   default = "lingaiah.online"
