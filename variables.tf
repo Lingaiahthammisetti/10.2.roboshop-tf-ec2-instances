@@ -20,7 +20,7 @@ variable "allow_all" {
    default = "sg-06b1b57b365846051"
 }
 variable "zone_id" {
-    default = "Z009640312X4J7FQYQ1XY"
+    default = "Z09344404GAAZVQWRHEM"
 }
 variable "domain_name" {
   default = "lingaiah.online"
